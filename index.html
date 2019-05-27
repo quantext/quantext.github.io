@@ -49,22 +49,15 @@
     .p-setting.pretty.p-default input:checked ~ .state label:after {
         background-color: #333 !important;
     }
+
+    a {
+        color: #57b0c2
+    }
 </style>
 
 <body>
 
-    <div class="container-fluid" style="">
-
-        <link rel="stylesheet" href="/static/css/themes/original.css">
-        <style>
-            .container-fluid {
-                padding: 0 !important
-            }
-
-            a {
-                color: #57b0c2
-            }
-        </style>
+    <div class="container-fluid" style="padding: 0 !important">
         <nav class="navbar navbar-toggleable-md">
             <nav class="navbar navbar-toggleable-md p-0 w-100">
                 <button class="navbar-toggler p-0" style="margin-bottom:-10px" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,97 +95,11 @@
             </div>
         </div>
         <div class="pt-4">
-            <div class="row m-0" style="text-align:center;display:none">
-                <div class="col-md-12">
-                    <div style="text-align: center;font-size: 2rem;font-weight: 300;padding-top: 1rem;">Try it for yourself</div>
-                    <div class="index_question_box">
-                        What is the meaning of life?<br />
-                        <div style="position:relative;width:100%">
-                            <div class="placehold" style="justify-content:center">Type your answer here and press enter</div>
-                            <input data-id="" type="text" class="form-control kwic_bar response_list main-theme-fill-dark mt-4" style="text-align:center">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="row m-0 index_keywords">
+            {% for post in site.blocks %}
+                <li>One here</li>
+            {% endfor %}
 
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-theme-fill-menu index_box">
-                <div class="pt-0 pb-0" style="background: url('/static/img/smiling_girl.jpg');color:white;position: relative;opacity: 1;background-size:cover;background-position:top right">
-                    <div class="col-md-6 pl-5 pr-5 pb-5 mt-0 mb-5 pt-5" style="z-index: 4;">
-                        <div class="centerFlex">
-                            <div style="background:#57b0c2;padding: 1rem .8rem;border-radius: 10rem;margin-right: .5rem;margin-bottom: .5rem;">
-                                <div class="inner-icon quantext-user" style="margin-bottom: -1rem;font-size: 2rem;margin-top: -.5rem;"></div>
-                            </div>
-                            <h2 style="font-weight:300">Quantext for teachers</h2>
-                        </div>
-                        <div style="border-bottom:10px solid #57b0c2;margin-bottom:2rem"></div>
-                        <div style="font-size: 1.2rem;font-weight: 300;">
-                            Helps you to understand your students:<br /><br />
-                            <ul>
-                                <li>Address common misconceptions.</li>
-                                <li>Identify and fix ambiguous or confusing material.</li>
-                                <li>Identify changes in student learning.</li>
-                                <li>Compare learning within and between student cohorts.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6" style="background: #193e45;position: absolute;top: 0;bottom: 0;left: 0;opacity: .95;z-index: 0;"></div>
-                </div>
-            </div>
-
-            <div class="main-theme-fill-menu index_box">
-                <div class="pt-0 pb-0" style="background: url('/static/img/whiteboard.jpg');color:white;position: relative;opacity: 1;background-size:cover;background-position:top right">
-                    <div class="col-md-6 pl-5 pr-5 pb-5 mt-0 mb-5 pt-5" style="z-index: 4;">
-                        <div class="centerFlex">
-                            <div style="background:#a2367c;padding: 1rem .8rem;border-radius: 10rem;margin-right: .5rem;margin-bottom: .5rem;">
-                                <div class="inner-icon quantext-user" style="margin-bottom: -1rem;font-size: 2rem;margin-top: -.5rem;"></div>
-                            </div>
-                            <h2 style="font-weight:300">Quantext for course coordinators</h2>
-                        </div>
-                        <div style="border-bottom:10px solid #a2367c;margin-bottom:2rem"></div>
-                        <div style="font-size: 1.2rem;font-weight: 300;">
-                            Helps you to design better courses:
-                            <br><br>
-                            <ul>
-                                <li>Analyse curriculum documents and teaching materials.</li>
-                                <li>Align and design courses and assessment.</li>
-                                <li>Prepare for course and quality audits.</li>
-                                <li>Compare learning outcomes with learning objectives.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6" style="background: #220c1a;position: absolute;top: 0;bottom: 0;left: 0;opacity: .95;z-index: 0;"></div>
-                </div>
-            </div>
-
-            <div class="main-theme-fill-menu index_box">
-                <div class="pt-0 pb-0" style="background: url('/static/img/institution.jpg');color:white;position: relative;opacity: 1;background-size: cover;background-position: top right;">
-                    <div class="col-md-6 pl-5 pr-5 pb-5 mt-0 mb-5 pt-5" style="z-index: 4;">
-                        <div class="centerFlex">
-                            <div style="background:#20a949;padding: 1rem .8rem;border-radius: 10rem;margin-right: .5rem;margin-bottom: .5rem;">
-                                <div class="inner-icon quantext-user" style="margin-bottom: -1rem;font-size: 2rem;margin-top: -.5rem;"></div>
-                            </div>
-                            <h2 style="font-weight:300">Quantext for tertiary institutions</h2>
-                        </div>
-                        <div style="border-bottom:10px solid #20a949;margin-bottom:2rem"></div>
-                        <div style="font-size: 1.2rem;font-weight: 300;">
-                            Helps you to compete effectively:
-                            <br><br>
-                            <ul>
-                                <li>Analyse student evaluations of teaching.</li>
-                                <li>Identify areas for systemic improvement.</li>
-                                <li>Track student experience.</li>
-                                <li>Compare experience within and between student cohorts.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6" style="background: #0a3718;position: absolute;top: 0;bottom: 0;left: 0;opacity: .95;z-index: 0;"></div>
-                </div>
-            </div>
+            
 
             <div style="background:#111;padding:2rem 0">
                 <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap" class="quantext_footer pl-3 pr-3">
