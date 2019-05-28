@@ -95,11 +95,9 @@
             </div>
         </div>
         <div class="pt-4">
-            {% for post in site.blocks %}
-                <div>something here</div>
-            {% endfor %}
-
-            
+            {% for block in site.blocks %}
+                {{ block.content }}
+            {% endfor %}            
 
             <div style="background:#111;padding:2rem 0">
                 <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap" class="quantext_footer pl-3 pr-3">
