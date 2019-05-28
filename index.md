@@ -1,6 +1,5 @@
 ---
 ---
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -97,7 +96,7 @@
         </div>
         <div class="pt-4">
             {% for post in site.blocks %}
-                <li>One here</li>
+                <div>something here</div>
             {% endfor %}
 
             
