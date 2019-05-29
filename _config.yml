@@ -2,3 +2,5 @@ collections_dir: blocks
 
 collections:
   - index
+  - about
+  - research
