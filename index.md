@@ -29,10 +29,8 @@
       gtag('js', new Date());
       gtag('config', 'UA-108505400-1');
     </script>
-
-</head>
-
-<style>
+    
+    <style>
     .main-theme-fill-dark:disabled {
         color: #aaa !important
     }
@@ -53,7 +51,9 @@
     a {
         color: #57b0c2
     }
-</style>
+    </style>
+
+</head>
 
 <body>
 
@@ -96,7 +96,7 @@
         </div>
         <div class="pt-4">
             {% for block in site.blocks %}
-                {{ block.content }}
+                {{ block.content | markdownify }}
             {% endfor %}            
 
             <div style="background:#111;padding:2rem 0">
