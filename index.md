@@ -95,8 +95,10 @@
             </div>
         </div>
         <div class="pt-4">
-            {% for block in site.blocks.index %}
-                {{ block }}
+            {% for block in site.blocks %}
+                {% if block.belongsTo == "index" %}
+                    {{ block }}
+                {% endif %}
             {% endfor %}            
 
             <div style="background:#111;padding:2rem 0">
