@@ -2,5 +2,5 @@
 title: About Quantext
 subtitle: 
 blocks: about
-permalink: /about/
+permalink: about
 ---
