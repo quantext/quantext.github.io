@@ -96,7 +96,7 @@
         </div>
         <div class="pt-4">
             {% for block in site.blocks %}
-                {{ block.content | markdownify }}
+                {{ block }}
             {% endfor %}            
 
             <div style="background:#111;padding:2rem 0">
