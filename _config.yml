@@ -1,2 +1,4 @@
+collections_dir: blocks
+
 collections:
-  - blocks
+  - index
