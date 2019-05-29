@@ -1,6 +1,6 @@
 ---
 title: About Quantext
-subtitle: 
 blocks: about
 permalink: about
+subtitle: 
 ---
