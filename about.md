@@ -1,6 +1,7 @@
 ---
 title: About Quantext
+subtitle: 
 blocks: about
 permalink: about
-subtitle: 
+banner: /static/img/quantext_feather_background2.jpg
 ---
