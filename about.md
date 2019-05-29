@@ -4,5 +4,3 @@ subtitle:
 blocks: about
 permalink: /about/
 ---
-
-Some content
