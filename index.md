@@ -95,7 +95,7 @@
             </div>
         </div>
         <div class="pt-4">
-            {% for block in site.blocks %}
+            {% for block in site.blocks.index %}
                 {{ block }}
             {% endfor %}            
 
