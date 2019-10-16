@@ -95,6 +95,14 @@
             </div>
         </div>
         <div class="pt-4">
+            {% if page.title == "Text analytics for higher education" %}
+                <div style="text-align: center;margin-bottom: -2rem;" class="pt-4">
+                    <div style="margin-bottom: -1rem;color: #aaa;">
+                        For Quantext use cases, screencast tutorials, and user guides, check out
+                    </div>
+                    <a href="https://workbench.quantext.org" target="_blank" style="font-weight: 300;font-size: 3rem;text-shadow: 1px 1px #eee;">https://workbench.quantext.org</a>
+                </div>
+            {% endif %}
             {% for block in site[page.blocks] %}
                 {{ block }}
             {% endfor %}            
